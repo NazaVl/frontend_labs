@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Музичний магазин</title>
+    <script src="https://kit.fontawesome.com/b4a7422848.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Музичний Світ</h1>
+        <nav>
+            <div class="header_nav">
+                <ul>
+                    <li><a class="url_nav" href="index.html">Головна</a></li>
+                    <li><a class="url_nav" href="catalog.html">Каталог</a></li>
+                    <li><a class="url_nav" href="about.html">Про нас</a></li>
+                    <li><a class="url_nav" href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="popular-products">
+            <h2 id="populat_txt">Популярні товари</h2>
+            <div class="slider">
+              <a href="catalog.html?category=keys">
+                <img src="img/piano.png" class="slide active" alt="Товар 1">
+              </a>
+              <a href="catalog.html?category=strings">
+                <img src="img/guitar.png" class="slide" alt="Товар 2">
+              </a>
+              <a href="catalog.html?category=drums">
+                <img src="img/drums.png" class="slide" alt="Товар 3">
+              </a>
+              
+              <button class="prev" onclick="changeSlide(-1)">‹</button>
+              <button class="next" onclick="changeSlide(1)">›</button>
+            </div>
+            <a class="show_all" href="catalog.html">Показати всі</a>
+        </section>          
+
+        <section>
+            <div class="img_map_content">
+                <img class="img_map" src="img/map.png" alt="Карта сайту" usemap="#storemap">
+                <map name="storemap">
+                    <area shape="poly" coords="234,543,279,342,272,323,279,304,285,285,294,278,302,262,324,256,348,268,345,285,355,290,341,302,347,310,329,322,342,331,326,334,314,346,275,538,286,543,284,554,322,570,347,597,345,637,332,670,339,710,347,754,345,802,327,837,307,856,274,868,205,866,148,850,102,822,87,772,98,722,118,690,146,662,159,634,157,599,167,562,196,546" title="Струнні" href="catalog.html?category=strings">
+                    <area shape="poly" coords="377,339,396,326,854,326,874,336,863,348,862,520,875,536,871,579,876,604,866,619,863,766,870,804,866,854,844,861,823,840,428,836,392,863,367,847,369,806,377,794,377,625,366,609,362,586,368,572,369,536,384,514" title="Клавішні" href="catalog.html?category=keys">
+                    <area shape="poly" coords="884,807,955,867,1042,878,1155,898,1261,840,1224,641,1228,538,1287,474,1219,365,892,361,875,417,902,567,896,686" title="Ударні" href="catalog.html?category=drums">
+                    <area shape="poly" coords="1235,615,1323,794,1375,785,1391,764,1323,379,1454,367,1454,351,1315,330,1289,377,1302,430,1303,526,1283,550,1246,576" title="Духові" href="catalog.html?category=winds">
+                </map>
+            </div>    
+        </section>
+
+        <section>
+            <div class="benefits">
+                <h2>Ми пропонуємо:</h2>
+                <div class="benefits_logo">
+                    <div class="benefits_content">
+                        <div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h4>Широкий вибір товарів</h4>
+                        <p id="tx1"></p>
+                    </div>
+                    <div class="benefits_content">
+                        <div class="icon"><i class="fa-solid fa-face-grin-stars"></i></div>
+                        <h4>Гарантія якості</h4>
+                        <p id="tx1"></p>
+                    </div>
+                    <div class="benefits_content">
+                        <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h4>Швидка доставка</h4>
+                        <p id="tx1"></p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Музичний Світ</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

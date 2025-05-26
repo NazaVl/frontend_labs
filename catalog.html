@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Музичний магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Каталог інструментів</h1>
+        <nav>
+            <div class="header_nav">
+                <ul>
+                    <li><a class="url_nav" href="index.html">Головна</a></li>
+                    <li><a class="url_nav" href="catalog.html">Каталог</a></li>
+                    <li><a class="url_nav" href="about.html">Про нас</a></li>
+                    <li><a class="url_nav" href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="filter">
+                <button class="filter_button" data-category="all" onclick="filterInstruments('all', this)">Усі</button>
+                <button class="filter_button" data-category="strings" onclick="filterInstruments('strings', this)">Струнні</button>
+                <button class="filter_button" data-category="drums" onclick="filterInstruments('drums', this)">Ударні</button>
+                <button class="filter_button" data-category="keys" onclick="filterInstruments('keys', this)">Клавішні</button>
+                <button class="filter_button" data-category="winds" onclick="filterInstruments('winds', this)">Духові</button>
+            </div>
+        </section>
+        
+        <section>
+            <div class="catalog_content">
+                <div class="strings instrument-category">    
+                    <h2 id="guitars">Струнні</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Фото</th>
+                                <th>Назва</th>
+                                <th>Тип</th>
+                                <th>Ціна</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yamaha F310</td>
+                                <td>Акустична гітара</td>
+                                <td>4500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Fender Stratocaster</td>
+                                <td>Електрогітара</td>
+                                <td>22000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Ibanez GSR200</td>
+                                <td>Бас-гітара</td>
+                                <td>9500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Admira Alba</td>
+                                <td>Класична гітара</td>
+                                <td>5200 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Taylor GS Mini</td>
+                                <td>Акустична гітара</td>
+                                <td>18500 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="drums instrument-category">
+                    <h2 id="drums">Ударні</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Фото</th>
+                                <th>Назва</th>
+                                <th>Комплектація</th>
+                                <th>Ціна</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mapex Tornado</td>
+                                <td>5 барабанів + тарілки</td>
+                                <td>15000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Roland TD-1DMK</td>
+                                <td>Електронна установка</td>
+                                <td>28000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Pearl Roadshow</td>
+                                <td>5 барабанів + аксесуари</td>
+                                <td>18500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Alesis Nitro Mesh</td>
+                                <td>Електронна, 8 елементів</td>
+                                <td>24000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Ludwig Accent</td>
+                                <td>Акустична, 5 барабанів</td>
+                                <td>16500 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keys instrument-category">    
+                    <h2 id="keys">Клавішні</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Фото</th>
+                                <th>Назва</th>
+                                <th>Тип</th>
+                                <th>Ціна</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yamaha PSR-E373</td>
+                                <td>Синтезатор</td>
+                                <td>9500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Casio CT-X700</td>
+                                <td>Синтезатор</td>
+                                <td>8800 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Korg B2</td>
+                                <td>Цифрове піаніно</td>
+                                <td>17500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Roland FP-10</td>
+                                <td>Цифрове піаніно</td>
+                                <td>21500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Medeli SP4200</td>
+                                <td>Сценічне піаніно</td>
+                                <td>19800 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="winds instrument-category">    
+                    <h2 id="winds">Духові</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Фото</th>
+                                <th>Назва</th>
+                                <th>Тип</th>
+                                <th>Ціна</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yamaha YFL-222</td>
+                                <td>Флейта</td>
+                                <td>13500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Jupiter JAS710G</td>
+                                <td>Саксофон альт</td>
+                                <td>29500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Bach TR300H2</td>
+                                <td>Труба</td>
+                                <td>16500 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Buffet Crampon Prodige</td>
+                                <td>Кларнет</td>
+                                <td>18000 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Roy Benson HR-302</td>
+                                <td>Валторна</td>
+                                <td>27500 грн</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Музичний Світ</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
