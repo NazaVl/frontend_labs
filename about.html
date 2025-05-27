@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про нас - Музичний магазин</title>
+    <script src="https://kit.fontawesome.com/b4a7422848.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,28 +18,62 @@
                     <li><a class="url_nav" href="about.html">Про нас</a></li>
                     <li><a class="url_nav" href="contact.html">Контакти</a></li>
                 </ul>
+                <div>
+                    <ul>
+                        <li><a class="head_log_reg_url" href="login.html">Log</a></li>
+                        <li>|</li>
+                        <li><a class="head_log_reg_url" href="register.html">Reg</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Наша історія</h2>
-            <p>Магазин "Музичний Світ" було засновано у 2010 році з метою зробити якісні музичні інструменти доступними кожному. Ми розпочали з невеликої точки продажу в Києві, а зараз маємо мережу по всій Україні та зручний інтернет-магазин.</p>
+            <div class="intro_about">
+                <h2>Наша історія</h2>
+                <p>З прадавніх-давен людсво створювало музику. Спочатку це були звичайні удари камінням, свист в трубку. Та з розвитком людства з'являлися все більш вичурні можливості створювати звук. Магазин "Музичний Світ" було засновано у 2010 році з метою зробити якісні музичні інструменти доступними кожному. Ми розпочали з невеликої точки продажу в Києві, а зараз маємо мережу по всій Україні та зручний інтернет-магазин.</p>
+            </div>
         </section>
 
         <section>
-            <h2>Ми пропонуємо</h2>
-            <ul>
-                <li>Консультації від професіоналів</li>
-                <li>Професійне обслуговування та ремонт</li>
-                <li>Безкоштовну доставку при замовленні від 5000 грн</li>
-            </ul>
+            <div class="proposal_about">
+                <h2>Ми пропонуємо:</h2>
+                <div class="proposal_about_logo">
+                    <div class="proposal_content">
+                        <div class="proposal_icon"><i class="fa-solid fa-people-arrows"></i></div>
+                        <h4>Консультації від професіоналів</h4>
+                    </div>
+                    <div class="proposal_content">
+                        <div class="proposal_icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h4>Професійне обслуговування та ремонт</h4>
+                    </div>
+                    <div class="proposal_content">
+                        <div class="proposal_icon"><i class="fa-solid fa-money-bills"></i></div>
+                        <h4>Безкоштовну доставку при замовленні від 5000 грн</h4>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Наша команда</h2>
-            <p>Ми — команда музикантів, які люблять свою справу. Наша місія — допомогти кожному знайти свій ідеальний інструмент.</p>
+            <div class="about_team">
+                <h2>Наша команда    <i class="fa-solid fa-people-group"></i></h2>
+                <p>Ми — команда музикантів, які люблять свою справу. Наша місія — допомогти кожному знайти свій ідеальний інструмент або врятувати друга, з яким ви творите музику.</p>
+            </div>
+        </section>
+        <section>
+            <div class="about_items">
+                <h2>У нас ви знайдете</h2>
+                <p>Наш магазин містить такі всесвітні бренди як:</p>
+                <ul id="about_items_list">
+                    <li>YAMAXA</li>
+                    <li>ROLAND</li>
+                    <li>CASIO</li>
+                    <li>Та інші</li>
+                </ul>
+            </div>
         </section>
     </main>
 

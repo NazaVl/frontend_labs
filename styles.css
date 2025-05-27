@@ -1,8 +1,8 @@
-body {
+html, body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
 }
 
 a{
@@ -60,6 +60,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: #333;
     color: white;
     text-align: center;
@@ -166,7 +167,9 @@ input, textarea, select {
 }
 
 .header_nav{
-    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #populat_txt{
@@ -230,8 +233,7 @@ input, textarea, select {
     margin-top: 20px;
     font-size: 35px;
     text-decoration: none;
-    width: 20%;
-    height: 60px;
+    width: 17%;
     color:#333;
     border: 3px solid #333;
     -webkit-transition: all 0.5s ease;;
@@ -294,7 +296,7 @@ thead {
 }
 
 thead th {
-    width: 33.333%;
+    width: 25%;
     padding: 12px 16px;
     text-align: left;
     font-weight: 600;
@@ -319,9 +321,173 @@ tbody tr:hover {
 
 
 .instrument-category h2 {
-    font-size: 20px;
+    font-size: 40px;
     margin-top: 30px;
     border-left: 5px solid #ff6600;
     padding-left: 10px;
     color: #222;
+}
+
+.catalog_themes_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+
+#catalog_guitar_img{
+    width: 40%;
+}
+
+#catalog_drums_img{
+    width: 50%;
+}
+
+#catalog_keys_img{
+    width: 50%;
+}
+
+#catalog_winds_img{
+    width: 30%;
+    margin-right: 10%;
+}
+
+.intro_about{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.proposal_about{
+    margin-left: 3%;
+}
+
+.proposal_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proposal_icon{
+    margin-right: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    color:#333;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+    font-size: 30px;
+}
+
+.proposal_icon:hover{
+    color: whitesmoke;
+    background-color: #333;
+}
+
+.about_team{
+    margin-left: 3%;
+}
+
+.about_items{
+    margin-left: 3%;
+}
+#about_items_list{
+    font-size: 20px;
+}
+
+.head_log_reg_url{
+    color:whitesmoke;
+}
+
+.form-section {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.user-form input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.user-form button {
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-form button:hover {
+    background-color: #e65c00;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+
+main {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
