@@ -42,7 +42,7 @@ const ContactPage = () => {
 
         try {
             const token = localStorage.getItem("token");
-
+            console.log("1")
             const response = await fetch("http://localhost:5000/api/messages", {
                 method: "POST",
                 headers: {
@@ -50,13 +50,13 @@ const ContactPage = () => {
                     Authorization: `Bearer ${token}`,
                 },
                 body: JSON.stringify({
-                    type: topic,
+                    topic: topic,
                     message: message,
                 }),
             });
-
+            console.log(response)
             if (!response.ok) throw new Error("Не вдалося надіслати повідомлення");
-
+            console.log("2")
             setSuccess("Повідомлення надіслано успішно!");
             setMessage("");
             setTopic("");
